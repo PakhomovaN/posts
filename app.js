@@ -55,8 +55,8 @@ rootEl.appendChild(postEl);
 
 const secondPost = {
     id: 996,
-    content: 'Listen it',
-    audioUrl: 'https://zaycev.net/artist/118719?spa=true&trackId=3180083',
+    content: 'EXO - Tempo (cover by ACID Family)',
+    audioUrl: 'https://www.youtube.com/watch?v=CcRJVBsBE1M',
     likes: 0,
     dislikes: 0,
 };
@@ -65,13 +65,8 @@ const secondPostEl = document.createElement('div');
 
 secondPostEl.className = 'card'; 
 
-// const audioEl = document.createElement('audio');
-// audioEl.src = post.audioUrl;
-// audioEl.className = 'card-img-top';
-// secondPostEl.appendChild(audioEl);
-
 const audioEl = document.createElement('audio');
-audioEl.controls = true; // здесь не пустой, а именно true
+audioEl.controls = true; 
 rootEl.appendChild(audioEl);
 
 const secondPostBodyEl = document.createElement('div');
@@ -108,13 +103,18 @@ rootEl.appendChild(secondPostEl);
 
 const thirdPost = {
     id: 986,
-    content: 'Listen it',
-    audioUrl: 'https://zaycev.net/artist/118719?spa=true&trackId=3180083',
+    content: 'EXO - Tempo (cover by ACID Family)',
+    videoUrl: 'https://www.youtube.com/watch?v=CcRJVBsBE1M',
     likes: 0,
+    dislikes: 0,
 };
 
+const thirdPostEl = document.createElement('div');
+
+thirdPostEl.className = 'card';
+
 const videoEl = document.createElement('video');
-videoEl.controls = true; // здесь не пустой, а именно true
+videoEl.controls = true; 
 rootEl.appendChild(videoEl);
 
 const thirdPostBodyEl = document.createElement('div');
