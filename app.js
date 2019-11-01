@@ -46,7 +46,6 @@ dislikesEl.onclick = function () {
     post.dislikes = post.dislikes + 1;
     dislikesEl.textContent = '👎 ' + post.dislikes;
 };
-// likes.onclick()
 
 postBodyEl.appendChild(likesEl);
 postBodyEl.appendChild(dislikesEl);
@@ -56,7 +55,7 @@ rootEl.appendChild(postEl);
 const secondPost = {
     id: 996,
     content: 'EXO - Tempo (cover by ACID Family)',
-    audioUrl: 'https://www.youtube.com/watch?v=CcRJVBsBE1M',
+    audioUrl: 'https://www.bensound.com/bensound-music/bensound-ukulele.mp3',
     likes: 0,
     dislikes: 0,
 };
@@ -67,6 +66,7 @@ secondPostEl.className = 'card';
 
 const audioEl = document.createElement('audio');
 audioEl.controls = true; 
+audioEl.src = secondPost.audioUrl;
 rootEl.appendChild(audioEl);
 
 const secondPostBodyEl = document.createElement('div');
@@ -104,7 +104,7 @@ rootEl.appendChild(secondPostEl);
 const thirdPost = {
     id: 986,
     content: 'EXO - Tempo (cover by ACID Family)',
-    videoUrl: 'https://www.youtube.com/watch?v=CcRJVBsBE1M',
+    videoUrl: 'https://youtu.be/-Qvi9mc3IU0.mp4',
     likes: 0,
     dislikes: 0,
 };
@@ -115,6 +115,7 @@ thirdPostEl.className = 'card';
 
 const videoEl = document.createElement('video');
 videoEl.controls = true; 
+videoEl.src = secondPost.videoUrl;
 rootEl.appendChild(videoEl);
 
 const thirdPostBodyEl = document.createElement('div');
@@ -149,9 +150,3 @@ thirdPostBodyEl.appendChild(thirdDislikesEl);
 
 rootEl.appendChild(thirdPostEl);
 
-// video
-/*
-const videoEl = document.createElement('video');
-videoEl.controls = true; // здесь не пустой, а именно true
-rootEl.appendChild(videoEl);
-*/
